@@ -1,28 +1,29 @@
 # WaveletsForest
 The wavelet decomposition of a Random Forest code provides a sparse approximation of regression or classification high dimensional function at various levels of details. The given the users setting and data, it provides analysis in the form of cross validation or prediction of testing set, given a testing set.
 # Input
-The input for the code is in the form of files for the training set ñ one file for the domain and one for the response variable ñ and example for the structure of the data format can be found at the folder DB sample
+The input for the code is in the form of files for the training set ‚Äì one file for the domain and one for the response variable ‚Äì and example for the structure of the data format can be found at the folder DB sample
 # Execution 
 The code is implemented on C# .Net4.5. and the source code is available in the source code folder. In addition, there is provided an execution that can be called from other scripts such as python or R.
+-note that for measuring Besov Smoothness, one could use the code at https://github.com/orenelis/BesovSmoothness
 # Setting 
-ïIn the I.O section write the path of your db and the path where you want to place the analysis results. 
-ïThe Script config contains different options for running an analyzing the WF. 
-ïRun parallel checkbox enables a parallel mode for the implementation.
-ïRun RF pruning ñ provides comparative RF with pruning strategy tha is described in the article and could be viewed at the code.
-ïRun RF ñ is mandatory.
-ïFold cross validation ñ use it in CV mode and denote how nany folds in the text box area.
-ïThreshold wavelets enable prediction with specific threshold is denoted + text box to insert its value.
-ïUse classification checkbox ñ to determine the error evaluation method (RMSE or accuracy).
-ïThe use estimate __ - enable different kind of estimations and produce different text files in the result path.
-ïThe parameter settings is:
+‚Ä¢In the I.O section write the path of your db and the path where you want to place the analysis results. 
+‚Ä¢The Script config contains different options for running an analyzing the WF. 
+‚Ä¢Run parallel checkbox enables a parallel mode for the implementation.
+‚Ä¢Run RF pruning ‚Äì provides comparative RF with pruning strategy tha is described in the article and could be viewed at the code.
+‚Ä¢Run RF ‚Äì is mandatory.
+‚Ä¢Fold cross validation ‚Äì use it in CV mode and denote how nany folds in the text box area.
+‚Ä¢Threshold wavelets enable prediction with specific threshold is denoted + text box to insert its value.
+‚Ä¢Use classification checkbox ‚Äì to determine the error evaluation method (RMSE or accuracy).
+‚Ä¢The use estimate __ - enable different kind of estimations and produce different text files in the result path.
+‚Ä¢The parameter settings is:
 oNumber of trees 
-oN features RF ñ the hyper parameter value (you can type explicit value or use ësqrtí or ëallí for the classic hyper parameter values)
+oN features RF ‚Äì the hyper parameter value (you can type explicit value or use ‚Äòsqrt‚Äô or ‚Äòall‚Äô for the classic hyper parameter values)
 oBagging (0.8 is 80% bagging)
-oError type in estimation :î2î for regression ì0î for classification 
+oError type in estimation :‚Äù2‚Äù for regression ‚Äú0‚Äù for classification 
 oThe rest of the parametes should be fixed to the values descrbed in the image
 # Output
 For K fold cross validation, the code creates k folders and saves the results in them. The main results are the error provided by adding more trees on the testing set (to evaluate the accuracy) as well on the training set (to evaluate the weak type smoothness of the underlying function). The decision trees are also saved in a text format.  
  # Other
-The code saves a file with config.txt under C folder that is read on runtime as a cash for the userís settings 
+The code saves a file with config.txt under C folder that is read on runtime as a cash for the user‚Äôs settings 
 
 
