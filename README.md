@@ -4,7 +4,7 @@ The wavelet decomposition of a Random Forest code provides a sparse approximatio
 The input for the code is in the form of files for the training set – one file for the domain and one for the response variable – and example for the structure of the data format can be found at the folder DB sample
 # Execution 
 The code is implemented on C# .Net4.5. and the source code is available in the source code folder. In addition, there is provided an execution that can be called from other scripts such as python or R.
--note that for measuring Besov Smoothness, one could use the code at https://github.com/orenelis/BesovSmoothness
+Note that for measuring Besov Smoothness, one could use the code at https://github.com/orenelis/BesovSmoothness
 # Setting 
 •In the I.O section write the path of your db and the path where you want to place the analysis results. 
 •The Script config contains different options for running an analyzing the WF. 
