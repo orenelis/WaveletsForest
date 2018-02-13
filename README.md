@@ -1,10 +1,11 @@
 # WaveletsForest
 The wavelet decomposition of a Random Forest code provides a sparse approximation of regression or classification high dimensional function at various levels of details. The given the users setting and data, it provides analysis in the form of cross validation or prediction of testing set, given a testing set.
+a python implementation for this code could be found at https://github.com/kobigurk/WaveletsForestRegressor/
 # Input
 The input for the code is in the form of files for the training set – one file for the domain and one for the response variable – and example for the structure of the data format can be found at the folder DB sample
 # Execution 
 The code is implemented on C# .Net4.5. and the source code is available in the source code folder. In addition, there is provided an execution that can be called from other scripts such as python or R.
-Note that for measuring Besov Smoothness, one could use the code at https://github.com/orenelis/BesovSmoothness
+Note that for measuring Besov Smoothness, one could use the code at https://github.com/orenelis/BesovSmoothness or in a a python implementation at https://github.com/kobigurk/WaveletsForestRegressor/
 # Setting 
 •In the I.O section write the path of your db and the path where you want to place the analysis results. 
 •The Script config contains different options for running an analyzing the WF. 
